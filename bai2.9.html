@@ -1,0 +1,465 @@
+<!doctype html>
+<html lang="vi" data-bs-theme="light">
+    <head>
+        <title>Bài 2.9 - Bootstrap Card</title>
+
+        <!-- Required meta tags -->
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        <!-- Bootstrap CSS v5.3.8 -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+            crossorigin="anonymous"
+        />
+
+        <style>
+            body {
+                padding-bottom: 50px;
+            }
+
+            .section-title {
+                margin-top: 35px;
+                margin-bottom: 15px;
+            }
+
+            .profile-img {
+                width: 100%;
+                height: 250px;
+                object-fit: cover;
+            }
+        </style>
+    </head>
+
+    <body>
+
+        <header>
+            <!-- place navbar here -->
+        </header>
+
+        <main class="container mt-4">
+
+            <h2 class="mb-4">Bài 2.9: Tạo Card theo mẫu</h2>
+
+
+            <!-- ====================================================== -->
+            <!-- A. CARD CÓ TIÊU ĐỀ VÀ LIÊN KẾT -->
+            <!-- ====================================================== -->
+
+            <h5 class="section-title">
+                a) Tạo card có tiêu đề và liên kết
+            </h5>
+
+            <div class="card" style="width: 26rem;">
+                <div class="card-body">
+
+                    <h4 class="card-title">
+                        Eiffel Tower
+                    </h4>
+
+                    <h6 class="card-subtitle mb-3 text-body-secondary">
+                        Champ de Mars, Paris, France
+                    </h6>
+
+                    <p class="card-text">
+                        Built in 1889 Eiffel Tower is one of the most iconic
+                        landmarks in the world.
+                    </p>
+
+                    <a href="2.3.html#phan-anh" class="card-link">
+                        View pictures
+                    </a>
+
+                    <a href="#" class="card-link">
+                        Learn more
+                    </a>
+
+                </div>
+            </div>
+
+
+            <!-- ====================================================== -->
+            <!-- B. CARD CÓ HEADER VÀ FOOTER -->
+            <!-- ====================================================== -->
+
+            <h5 class="section-title">
+                b) Tạo Card có Header và Footer
+            </h5>
+
+            <div class="card text-center">
+
+                <div class="card-header">
+                    Featured
+                </div>
+
+                <div class="card-body">
+
+                    <h5 class="card-title">
+                        NASA Launched Solar Probe
+                    </h5>
+
+                    <p class="card-text">
+                        NASA launched Parker space probe in 2018 with the
+                        mission of making observations of the outer corona
+                        of the Sun. It is the first-ever mission to "touch"
+                        the Sun.
+                    </p>
+
+                    <a href="#" class="btn btn-dark">
+                        Know more
+                    </a>
+
+                </div>
+
+                <div class="card-footer text-body-secondary">
+                    3 years ago
+                </div>
+
+            </div>
+
+
+            <!-- ====================================================== -->
+            <!-- C. CARD CÓ ĐƯỜNG VIỀN VÀ NỘI DUNG -->
+            <!-- ====================================================== -->
+
+            <h5 class="section-title">
+                c) Tạo card có đường viền và nội dung
+            </h5>
+
+            <div class="row g-3">
+
+                <!-- Primary -->
+                <div class="col-md-6">
+                    <div class="card border-primary">
+                        <div class="card-body">
+
+                            <h5 class="card-title text-primary">
+                                Primary card title
+                            </h5>
+
+                            <p class="card-text">
+                                Some dummy text to make up the card's content.
+                                You can replace it anytime.
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Secondary -->
+                <div class="col-md-6">
+                    <div class="card border-secondary">
+                        <div class="card-body">
+
+                            <h5 class="card-title text-secondary">
+                                Secondary card title
+                            </h5>
+
+                            <p class="card-text">
+                                Some dummy text to make up the card's content.
+                                You can replace it anytime.
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Success -->
+                <div class="col-md-6">
+                    <div class="card border-success">
+                        <div class="card-body">
+
+                            <h5 class="card-title text-success">
+                                Success card title
+                            </h5>
+
+                            <p class="card-text">
+                                Some dummy text to make up the card's content.
+                                You can replace it anytime.
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Danger -->
+                <div class="col-md-6">
+                    <div class="card border-danger">
+                        <div class="card-body">
+
+                            <h5 class="card-title text-danger">
+                                Danger card title
+                            </h5>
+
+                            <p class="card-text">
+                                Some dummy text to make up the card's content.
+                                You can replace it anytime.
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Warning -->
+                <div class="col-md-6">
+                    <div class="card border-warning">
+                        <div class="card-body">
+
+                            <h5 class="card-title text-warning">
+                                Warning card title
+                            </h5>
+
+                            <p class="card-text">
+                                Some dummy text to make up the card's content.
+                                You can replace it anytime.
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Info -->
+                <div class="col-md-6">
+                    <div class="card border-info">
+                        <div class="card-body">
+
+                            <h5 class="card-title text-info">
+                                Info card title
+                            </h5>
+
+                            <p class="card-text">
+                                Some dummy text to make up the card's content.
+                                You can replace it anytime.
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Dark -->
+                <div class="col-md-6">
+                    <div class="card border-dark">
+                        <div class="card-body">
+
+                            <h5 class="card-title text-dark">
+                                Dark card title
+                            </h5>
+
+                            <p class="card-text">
+                                Some dummy text to make up the card's content.
+                                You can replace it anytime.
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Light -->
+                <div class="col-md-6">
+                    <div class="card border-light">
+                        <div class="card-body">
+
+                            <h5 class="card-title">
+                                Light card title
+                            </h5>
+
+                            <p class="card-text">
+                                Some dummy text to make up the card's content.
+                                You can replace it anytime.
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <!-- ====================================================== -->
+            <!-- D. CĂN CHỈNH NỘI DUNG CARD -->
+            <!-- ====================================================== -->
+
+            <h5 class="section-title">
+                d) Căn chỉnh nội dung bên trong Card
+            </h5>
+
+            <div class="row g-4">
+
+
+                <!-- Căn trái -->
+                <div class="col-md-4">
+
+                    <div class="card text-start">
+                        <div class="card-body">
+
+                            <h5 class="card-title">
+                                Card title
+                            </h5>
+
+                            <p class="card-text">
+                                Some dummy text to make up the card's content.
+                                You can replace it anytime.
+                            </p>
+
+                            <a href="#" class="btn btn-dark">
+                                Know more
+                            </a>
+
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <!-- Căn giữa -->
+                <div class="col-md-4">
+
+                    <div class="card text-center">
+                        <div class="card-body">
+
+                            <h5 class="card-title">
+                                Card title
+                            </h5>
+
+                            <p class="card-text">
+                                Some dummy text to make up the card's content.
+                                You can replace it anytime.
+                            </p>
+
+                            <a href="#" class="btn btn-dark">
+                                Know more
+                            </a>
+
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <!-- Căn phải -->
+                <div class="col-md-4">
+
+                    <div class="card text-end">
+                        <div class="card-body">
+
+                            <h5 class="card-title">
+                                Card title
+                            </h5>
+
+                            <p class="card-text">
+                                Some dummy text to make up the card's content.
+                                You can replace it anytime.
+                            </p>
+
+                            <a href="#" class="btn btn-dark">
+                                Know more
+                            </a>
+
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- ====================================================== -->
+            <!-- E. CARD THÔNG TIN CÁ NHÂN -->
+            <!-- ====================================================== -->
+
+            <h5 class="section-title">
+                e) Tạo card hiển thị các thông tin gồm:
+            </h5>
+
+            <ul>
+                <li>Ảnh đại diện</li>
+                <li>Họ tên</li>
+                <li>Nút View Profile</li>
+            </ul>
+
+
+            <div class="row g-4 justify-content-center mt-2">
+
+                <!-- Card ảnh nằm trên -->
+                <div class="col-md-4">
+
+                    <div class="card text-center">
+
+                        <img
+                            src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png"
+                            class="card-img-top profile-img"
+                            alt="Nguyễn Văn A"
+                        />
+
+                        <div class="card-body">
+
+                            <h4 class="card-title">
+                                Nguyễn Văn A
+                            </h4>
+
+                            <a href="#" class="btn btn-dark">
+                                View Profile
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Card ảnh nằm dưới -->
+                <div class="col-md-4">
+
+                    <div class="card text-center">
+
+                        <div class="card-body">
+
+                            <h4 class="card-title">
+                                Nguyễn Văn A
+                            </h4>
+
+                            <a href="#" class="btn btn-dark">
+                                View Profile
+                            </a>
+
+                        </div>
+
+                        <img
+                            src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png"
+                            class="card-img-bottom profile-img"
+                            alt="Nguyễn Văn A"
+                        />
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </main>
+
+
+        <footer>
+            <!-- place footer here -->
+        </footer>
+
+
+        <!-- Bootstrap JavaScript Bundle -->
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+            crossorigin="anonymous"
+        ></script>
+
+    </body>
+</html>

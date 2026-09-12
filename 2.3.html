@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="vi" data-bs-theme="light">
+    <head>
+        <title>Bài 2.3 - Căn chỉnh hình ảnh</title>
+
+        <!-- Required meta tags -->
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        <!-- Bootstrap CSS v5.3.8 -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+            crossorigin="anonymous"
+        />
+
+        <style>
+            .box {
+                border: 2px solid black;
+                min-height: 90px;
+                padding: 10px;
+                margin-bottom: 12px;
+            }
+
+            .avatar {
+                width: 60px;
+                height: 60px;
+                object-fit: cover;
+            }
+        </style>
+    </head>
+
+    <body>
+
+        <header>
+            <!-- place navbar here -->
+        </header>
+
+        <main class="container mt-4" id="phan-anh">
+
+            <h4 class="mb-4">
+                Bài 2.3: Căn chỉnh hình ảnh trong theo mẫu
+            </h4>
+
+
+            <!-- 1. Căn trái -->
+            <p class="fw-bold mb-1">
+                Left alignment (This is default)
+            </p>
+
+            <div class="box">
+                <img
+                    src="https://cdn-icons-png.flaticon.com/512/847/847969.png"
+                    class="avatar"
+                    alt="Avatar"
+                />
+            </div>
+
+
+            <!-- 2. Căn giữa bằng text-center -->
+            <p class="fw-bold mb-1">
+                Center alignment using text alignment classes
+            </p>
+
+            <div class="box text-center">
+                <img
+                    src="https://cdn-icons-png.flaticon.com/512/847/847969.png"
+                    class="avatar"
+                    alt="Avatar"
+                />
+            </div>
+
+
+            <!-- 3. Căn phải bằng text-end -->
+            <p class="fw-bold mb-1">
+                Right alignment using text alignment classes
+            </p>
+
+            <div class="box text-end">
+                <img
+                    src="https://cdn-icons-png.flaticon.com/512/847/847969.png"
+                    class="avatar"
+                    alt="Avatar"
+                />
+            </div>
+
+
+            <!-- 4. Căn ngang bằng float -->
+            <p class="fw-bold mb-1">
+                Horizontal alignment using float classes
+            </p>
+
+            <div class="box clearfix">
+                <img
+                    src="https://cdn-icons-png.flaticon.com/512/847/847969.png"
+                    class="avatar float-start"
+                    alt="Avatar trái"
+                />
+
+                <img
+                    src="https://cdn-icons-png.flaticon.com/512/847/847969.png"
+                    class="avatar float-end"
+                    alt="Avatar phải"
+                />
+            </div>
+
+
+            <!-- 5. Căn giữa bằng margin auto -->
+            <p class="fw-bold mb-1">
+                Center alignment of block-level image using auto margin
+            </p>
+
+            <div class="box">
+                <img
+                    src="https://cdn-icons-png.flaticon.com/512/847/847969.png"
+                    class="avatar d-block mx-auto"
+                    alt="Avatar"
+                />
+            </div>
+
+        </main>
+
+        <footer>
+            <!-- place footer here -->
+        </footer>
+
+        <!-- Bootstrap JavaScript Bundle -->
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+            crossorigin="anonymous"
+        ></script>
+
+    </body>
+</html>
