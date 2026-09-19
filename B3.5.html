@@ -1,0 +1,571 @@
+<!doctype html>
+<html lang="en" data-bs-theme="light">
+    <head>
+        <title>Bài 3.5 - Form và xử lý nhập liệu</title>
+
+        <!-- Required meta tags -->
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        <!-- Bootstrap CSS v5.3.8 -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+            crossorigin="anonymous"
+        />
+    </head>
+
+    <body>
+
+        <header>
+            <!-- place navbar here -->
+        </header>
+
+        <main class="container mt-4 mb-5">
+
+            <h5>Bài 3.5: Tạo form và xử lý nhập liệu cho form</h5>
+
+            <!-- ====================================================== -->
+            <!-- PHẦN A: XÁC THỰC BIỂU MẪU -->
+            <!-- ====================================================== -->
+
+            <p class="mt-4">a)</p>
+
+            <h3>Xác thực biểu mẫu</h3>
+
+            <p>
+                Ví dụ bạn gửi biểu mẫu nhưng chưa điền hết thông tin
+                thì sẽ nhận được thông báo như bên dưới.
+            </p>
+
+            <form class="needs-validation" novalidate>
+
+                <!-- Tên người dùng -->
+                <div class="mb-3">
+
+                    <label for="username" class="form-label">
+                        Tên người dùng:
+                    </label>
+
+                    <input
+                        type="text"
+                        class="form-control"
+                        id="username"
+                        placeholder="Nhập tên người dùng"
+                        required
+                    />
+
+                    <div class="invalid-feedback">
+                        Điền đầy đủ thông tin.
+                    </div>
+
+                </div>
+
+
+                <!-- Mật khẩu -->
+                <div class="mb-3">
+
+                    <label for="password" class="form-label">
+                        Mật khẩu:
+                    </label>
+
+                    <input
+                        type="password"
+                        class="form-control"
+                        id="password"
+                        placeholder="Enter password"
+                        required
+                    />
+
+                    <div class="invalid-feedback">
+                        Điền đầy đủ thông tin.
+                    </div>
+
+                </div>
+
+
+                <!-- Đồng ý -->
+                <div class="form-check mb-3">
+
+                    <input
+                        class="form-check-input"
+                        type="checkbox"
+                        id="agree"
+                        required
+                    />
+
+                    <label
+                        class="form-check-label"
+                        for="agree"
+                    >
+                        Đồng ý
+                    </label>
+
+                    <div class="invalid-feedback">
+                        Bạn cần đồng ý trước khi đăng nhập.
+                    </div>
+
+                </div>
+
+
+                <!-- Đăng nhập -->
+                <button
+                    type="submit"
+                    class="btn btn-dark"
+                >
+                    Đăng nhập
+                </button>
+
+            </form>
+
+
+            <!-- ====================================================== -->
+            <!-- PHẦN B: REGISTRATION FORM -->
+            <!-- ====================================================== -->
+
+            <p class="mt-5">b)</p>
+
+            <h2 class="mb-4">Registration Form</h2>
+
+            <form>
+
+                <!-- First Name -->
+                <div class="row mb-3 align-items-center">
+
+                    <label
+                        for="firstName"
+                        class="col-md-3 col-form-label"
+                    >
+                        First Name:
+                    </label>
+
+                    <div class="col-md-9">
+
+                        <input
+                            type="text"
+                            class="form-control"
+                            id="firstName"
+                            placeholder="First Name"
+                        />
+
+                    </div>
+
+                </div>
+
+
+                <!-- Last Name -->
+                <div class="row mb-3 align-items-center">
+
+                    <label
+                        for="lastName"
+                        class="col-md-3 col-form-label"
+                    >
+                        Last Name:
+                    </label>
+
+                    <div class="col-md-9">
+
+                        <input
+                            type="text"
+                            class="form-control"
+                            id="lastName"
+                            placeholder="Last Name"
+                        />
+
+                    </div>
+
+                </div>
+
+
+                <!-- Email -->
+                <div class="row mb-3 align-items-center">
+
+                    <label
+                        for="email"
+                        class="col-md-3 col-form-label"
+                    >
+                        Email Address:
+                    </label>
+
+                    <div class="col-md-9">
+
+                        <input
+                            type="email"
+                            class="form-control"
+                            id="email"
+                            placeholder="Email Address"
+                        />
+
+                    </div>
+
+                </div>
+
+
+                <!-- Mobile Number -->
+                <div class="row mb-3 align-items-center">
+
+                    <label
+                        for="mobile"
+                        class="col-md-3 col-form-label"
+                    >
+                        Mobile Number:
+                    </label>
+
+                    <div class="col-md-9">
+
+                        <input
+                            type="tel"
+                            class="form-control"
+                            id="mobile"
+                            placeholder="Phone Number"
+                        />
+
+                    </div>
+
+                </div>
+
+
+                <!-- Date of Birth -->
+                <div class="row mb-3 align-items-center">
+
+                    <label class="col-md-3 col-form-label">
+                        Date of Birth:
+                    </label>
+
+                    <div class="col-md-9">
+
+                        <div class="row g-2">
+
+                            <!-- Date -->
+                            <div class="col-md-4">
+
+                                <select class="form-select">
+                                    <option selected disabled>
+                                        Date
+                                    </option>
+
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                    <option>6</option>
+                                    <option>7</option>
+                                    <option>8</option>
+                                    <option>9</option>
+                                    <option>10</option>
+                                    <option>11</option>
+                                    <option>12</option>
+                                    <option>13</option>
+                                    <option>14</option>
+                                    <option>15</option>
+                                    <option>16</option>
+                                    <option>17</option>
+                                    <option>18</option>
+                                    <option>19</option>
+                                    <option>20</option>
+                                    <option>21</option>
+                                    <option>22</option>
+                                    <option>23</option>
+                                    <option>24</option>
+                                    <option>25</option>
+                                    <option>26</option>
+                                    <option>27</option>
+                                    <option>28</option>
+                                    <option>29</option>
+                                    <option>30</option>
+                                    <option>31</option>
+                                </select>
+
+                            </div>
+
+
+                            <!-- Month -->
+                            <div class="col-md-4">
+
+                                <select class="form-select">
+
+                                    <option selected disabled>
+                                        Month
+                                    </option>
+
+                                    <option>January</option>
+                                    <option>February</option>
+                                    <option>March</option>
+                                    <option>April</option>
+                                    <option>May</option>
+                                    <option>June</option>
+                                    <option>July</option>
+                                    <option>August</option>
+                                    <option>September</option>
+                                    <option>October</option>
+                                    <option>November</option>
+                                    <option>December</option>
+
+                                </select>
+
+                            </div>
+
+
+                            <!-- Year -->
+                            <div class="col-md-4">
+
+                                <select class="form-select">
+
+                                    <option selected disabled>
+                                        Year
+                                    </option>
+
+                                    <option>2000</option>
+                                    <option>2001</option>
+                                    <option>2002</option>
+                                    <option>2003</option>
+                                    <option>2004</option>
+                                    <option>2005</option>
+                                    <option>2006</option>
+                                    <option>2007</option>
+                                    <option>2008</option>
+                                    <option>2009</option>
+                                    <option>2010</option>
+
+                                </select>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Postal Address -->
+                <div class="row mb-3">
+
+                    <label
+                        for="address"
+                        class="col-md-3 col-form-label"
+                    >
+                        Postal Address:
+                    </label>
+
+                    <div class="col-md-9">
+
+                        <textarea
+                            class="form-control"
+                            id="address"
+                            rows="3"
+                            placeholder="Postal Address"
+                        ></textarea>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Zip Code -->
+                <div class="row mb-3 align-items-center">
+
+                    <label
+                        for="zipCode"
+                        class="col-md-3 col-form-label"
+                    >
+                        Zip Code:
+                    </label>
+
+                    <div class="col-md-9">
+
+                        <input
+                            type="text"
+                            class="form-control"
+                            id="zipCode"
+                            placeholder="Zip Code"
+                        />
+
+                    </div>
+
+                </div>
+
+
+                <!-- Upload Image -->
+                <div class="row mb-3 align-items-center">
+
+                    <label
+                        for="image"
+                        class="col-md-3 col-form-label"
+                    >
+                        Upload Image:
+                    </label>
+
+                    <div class="col-md-9">
+
+                        <input
+                            type="file"
+                            class="form-control"
+                            id="image"
+                        />
+
+                    </div>
+
+                </div>
+
+
+                <!-- Gender -->
+                <div class="row mb-3">
+
+                    <label class="col-md-3 col-form-label">
+                        Gender:
+                    </label>
+
+                    <div class="col-md-9 d-flex align-items-center gap-4">
+
+                        <!-- Male -->
+                        <div class="form-check">
+
+                            <input
+                                class="form-check-input"
+                                type="radio"
+                                name="gender"
+                                id="male"
+                                value="male"
+                            />
+
+                            <label
+                                class="form-check-label"
+                                for="male"
+                            >
+                                Male
+                            </label>
+
+                        </div>
+
+
+                        <!-- Female -->
+                        <div class="form-check">
+
+                            <input
+                                class="form-check-input"
+                                type="radio"
+                                name="gender"
+                                id="female"
+                                value="female"
+                            />
+
+                            <label
+                                class="form-check-label"
+                                for="female"
+                            >
+                                Female
+                            </label>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Terms and Conditions -->
+                <div class="row mb-3">
+
+                    <div class="offset-md-3 col-md-9">
+
+                        <div class="form-check">
+
+                            <input
+                                class="form-check-input"
+                                type="checkbox"
+                                id="terms"
+                            />
+
+                            <label
+                                class="form-check-label"
+                                for="terms"
+                            >
+                                I agree to the
+                                <a href="#">
+                                    Terms and Conditions
+                                </a>
+                            </label>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Submit / Reset -->
+                <div class="row">
+
+                    <div class="offset-md-3 col-md-9">
+
+                        <button
+                            type="submit"
+                            class="btn btn-dark"
+                        >
+                            Submit
+                        </button>
+
+                        <button
+                            type="reset"
+                            class="btn btn-secondary"
+                        >
+                            Reset
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </form>
+
+        </main>
+
+
+        <footer>
+            <!-- place footer here -->
+        </footer>
+
+
+        <!-- Bootstrap JavaScript Bundle (includes Popper) -->
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+            crossorigin="anonymous"
+        ></script>
+
+
+        <!-- XỬ LÝ VALIDATION CHO PHẦN A -->
+        <script>
+            (() => {
+                "use strict";
+
+                const forms =
+                    document.querySelectorAll(".needs-validation");
+
+                Array.from(forms).forEach((form) => {
+
+                    form.addEventListener(
+                        "submit",
+                        (event) => {
+
+                            if (!form.checkValidity()) {
+                                event.preventDefault();
+                                event.stopPropagation();
+                            }
+
+                            form.classList.add("was-validated");
+
+                        },
+                        false
+                    );
+
+                });
+
+            })();
+        </script>
+
+    </body>
+</html>
